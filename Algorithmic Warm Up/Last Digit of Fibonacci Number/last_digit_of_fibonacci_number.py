@@ -1,4 +1,3 @@
-
 def last_digit_of_fibonacci_number(n):
     assert 0 <= n <= 10 ** 7
     f=[]
@@ -11,7 +10,6 @@ def last_digit_of_fibonacci_number(n):
             f.append((f[i-1]+f[i-2])%10)
         x=f[n]
         return x
-
 if __name__ == '__main__':
     input_n = int(input())
     print(last_digit_of_fibonacci_number(input_n))
