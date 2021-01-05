@@ -1,8 +1,6 @@
 def fibonacci_number_again(n, m):
     assert 0 <= n <= 10 ** 18 and 2 <= m <= 10 ** 3
-    f=[]
-    f.append(0)
-    f.append(1)
+    f= [0, 1]
     if n<=1:
         return n
     else:
@@ -16,7 +14,7 @@ def fibonacci_number_again(n, m):
     f.pop()
     x=len(f)
     y=(n % x)
-    return (f[y])
+    return f[y]
 if __name__ == '__main__':
     input_n, input_m = map(int, input().split())
     print(fibonacci_number_again(input_n, input_m))
